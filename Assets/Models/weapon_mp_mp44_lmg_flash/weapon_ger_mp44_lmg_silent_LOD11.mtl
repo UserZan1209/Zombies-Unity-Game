@@ -1,0 +1,18 @@
+newmtl mtl_weapon_mp_mp44
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/weapon_stg44_mp_c.dds
+
+newmtl mtl_weapon_mp_mp44_wood
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/weapon_stg44_mp_c.dds
+
+newmtl mtl_weapon_flash_suppressor
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/silencer_flashsup_c.dds
+

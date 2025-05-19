@@ -1,0 +1,12 @@
+newmtl mtl_friction_tape
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/mtl_tape.dds
+
+newmtl mtl_weapon_satchel_charge
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/mtl_satchel_charge_c.dds
+

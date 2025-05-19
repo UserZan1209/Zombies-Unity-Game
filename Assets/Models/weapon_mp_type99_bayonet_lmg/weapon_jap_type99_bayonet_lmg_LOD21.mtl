@@ -1,0 +1,12 @@
+newmtl mtl_weapon_mp_type99_lmg
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_type99_lmg_mp_c.dds
+
+newmtl mtl_weapon_99bayonet
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/weapon_type99bayonet_c.dds
+

@@ -1,0 +1,18 @@
+newmtl mtl_weapon_mosin
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/rus_rifle_mosinnagant_c.dds
+
+newmtl mtl_rus_riflegrenade_d32
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/rus_riflegrenade_mosinnagant_c.dds
+
+newmtl mtl_weapon_mosin_wood
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/rus_rifle_mosinnagant_c.dds
+

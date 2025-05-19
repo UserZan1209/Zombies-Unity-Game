@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 57b57392d82c62b448c0e594f5543fbc
+  - enabled: 1
+    path: Assets/Scenes/Nacht der Untoten.unity
+    guid: ec0da412c94e5984681f2b64fd18edf9
+  - enabled: 1
+    path: Assets/Scenes/Verruckt.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Shi no Numa.unity
+    guid: dbb6813e88190ed44b352efe31b35cf8
+  - enabled: 1
+    path: Assets/Scenes/Der Reise.unity
+    guid: 6af1639346de22540849e9df222f021b
+  - enabled: 1
+    path: Assets/Scenes/TestLevel.unity
+    guid: 48111085ba34cb3498cf085c40114416
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9eb07e2d669e9c94e9d7d3c782a916f7,
+      type: 2}

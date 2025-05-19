@@ -1,0 +1,30 @@
+newmtl mtl_vacuum_tube
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/vacuum_tube_c.dds
+
+newmtl mtl_vacuum_tube_glass
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/vacuum_tube_c.dds
+
+newmtl mtl_lightning_chamber_glass
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/lightning_chamber_glass_c.dds
+
+newmtl mtl_lightning_chamber_main
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/lightning_chamber_main_c.dds
+
+newmtl mtl_tesla_metal
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/tesla_c.dds
+

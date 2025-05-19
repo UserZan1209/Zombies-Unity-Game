@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\scripts\\enemies\\econtroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\econtroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\scripts\\spawners\\zombiespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawners\\zombiespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\scripts\\enemies\\emovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\emovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\scripts\\player\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\scripts\\menus\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menus\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\infima games\\low poly shooter pack - free sample\\code\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\infima games\\low poly shooter pack - free sample\\code\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\assets\\infima games\\low poly shooter pack - free sample\\code\\character\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\infima games\\low poly shooter pack - free sample\\code\\character\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\assets\\infima games\\low poly shooter pack - free sample\\code\\camera\\cameralook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\infima games\\low poly shooter pack - free sample\\code\\camera\\cameralook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\assets\\infima games\\low poly shooter pack - free sample\\code\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\infima games\\low poly shooter pack - free sample\\code\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\assets\\infima games\\low poly shooter pack - free sample\\code\\character\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD5B629-8907-57C7-511F-F3CBE56067FF}|Assembly-CSharp.csproj|solutionrelative:assets\\infima games\\low poly shooter pack - free sample\\code\\character\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 179,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EMovement.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Enemies\\EMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EMovement.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Enemies\\EMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EMovement.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:46:16.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ZombieSpawner.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAawDYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:33:53.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EController.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Enemies\\EController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EController.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Enemies\\EController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:05:41.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Menus\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menus\\MainMenu.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Menus\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menus\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:03:27.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Weapons\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Weapons\\Weapon.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Weapons\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Weapons\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:25:48.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerUI.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Player\\PlayerUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerUI.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Player\\PlayerUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T16:23:56.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:26:48.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 221,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Movement.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Movement.cs",
+              "RelativeToolTip": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Movement.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:55:00.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Character.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Character.cs",
+              "RelativeDocumentMoniker": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Character.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Character.cs",
+              "RelativeToolTip": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\Character.cs",
+              "ViewState": "AgIAAPkCAAAAAAAAAAAhwBEDAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:07:39.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CharacterBehaviour.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\CharacterBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\CharacterBehaviour.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\CharacterBehaviour.cs",
+              "RelativeToolTip": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Character\\CharacterBehaviour.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T16:07:20.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CameraLook.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Camera\\CameraLook.cs",
+              "RelativeDocumentMoniker": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Camera\\CameraLook.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Camera\\CameraLook.cs",
+              "RelativeToolTip": "Assets\\Infima Games\\Low Poly Shooter Pack - Free Sample\\Code\\Camera\\CameraLook.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T15:56:26.784Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

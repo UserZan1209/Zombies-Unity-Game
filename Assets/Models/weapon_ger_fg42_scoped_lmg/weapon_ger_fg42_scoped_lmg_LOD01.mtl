@@ -1,0 +1,18 @@
+newmtl mtl_weapon_fg42
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_fg42_c.dds
+
+newmtl mtl_weapon_fg42_wood
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_fg42_c.dds
+
+newmtl mtl_weapon_fg42_scope
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_fg42_scope_c.dds
+

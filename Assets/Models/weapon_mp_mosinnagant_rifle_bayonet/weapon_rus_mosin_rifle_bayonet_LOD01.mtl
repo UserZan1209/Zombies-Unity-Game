@@ -1,0 +1,12 @@
+newmtl mtl_weapon_mp_mosin
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/rus_rifle_mosinnagant_mp_c.dds
+
+newmtl mtl_rus_bayonet
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/rus_bayonet_mosinnagantbayonet_c.dds
+

@@ -1,0 +1,6 @@
+newmtl mtl_weapon_mp_mp40
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/weapon_mp40_mp_c.dds
+

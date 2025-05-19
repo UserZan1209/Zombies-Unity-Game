@@ -1,0 +1,12 @@
+newmtl mtl_weapon_mp_type100_metal
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_type100_c_new.dds
+
+newmtl mtl_weapon_mp_type100_wood
+Kd 1.0000 1.0000 1.0000
+Ns 1
+illum 0
+map_Kd images/w_type100_c_new.dds
+
