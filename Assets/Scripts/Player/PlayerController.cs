@@ -12,11 +12,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Animator armAnimator;
     [SerializeField] private Transform cameraTransform;
-    [SerializeField] public Character chr;
-    [SerializeField] public Inventory inv;
+    [SerializeField] public InventoryController invController;
+    [SerializeField] public Inventory inventory;
+    [SerializeField] private const int WEAPON_SLOT_COUNT = 2;
+    [SerializeField] public GameObject invObject;
     [SerializeField] private CapsuleCollider capsuleCollider;
     [SerializeField] private InputActionReference moveIA;
-    [SerializeField] private InputActionReference cameraMoveIA;
+    [SerializeField] private InputActionReference cameraMoeIA;
  
     [Header("Variables")]
     [SerializeField] private float playerHealth;
@@ -41,28 +43,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float vSpeed = 0.0f;
 
 
-    //Velocity.
-    private Vector3 Velocity
-    {
-        //Getter.
-        get => rb.velocity;
-        //Setter.
-        set => rb.velocity = value;
-    }
-
-    public Rigidbody GetRB()
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        return rb; 
-    }
-
-
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        chr = GetComponent<Character>();
+        rb = GetComponent<Rigidbody>(); 
         capsuleCollider = GetComponent<CapsuleCollider>();
-        
+        invController = gameObject.AddComponent<InventoryController>();
+        invController.inventoryObject = invObject;
+        invController.inventory = new Inventory(WEAPON_SLOT_COUNT);
+
+        inventory = invController.inventory;    
 
         cameraTransform = Camera.main.transform;
 
@@ -72,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
         playerHealthMAX = 100;
         playerHealth = playerHealthMAX;
-        playerScore = 500;
+        playerScore = 50000;
 
         hasQR = false;
         hasJG = false;
@@ -84,6 +73,11 @@ public class PlayerController : MonoBehaviour
 
         speedWalking = 5.0f;
         speedRunning = 9.0f;
+    }
+
+    private void Awake()
+    {
+
     }
 
     private void Update()
@@ -112,10 +106,28 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Alpha1)) 
         {
-            //aim
+            if (inventory.weaponSlots[0].wData == null)
+                return;
+
+            inventory.SwitchWeapon();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            if (inventory.weaponSlots[1].wData == null)
+                return;
+
+            inventory.SwitchWeapon();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            armAnimator.SetBool("isAiming", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            armAnimator.SetBool("isAiming", false);
         }
 
         if (Input.GetKeyUp(KeyCode.E))
@@ -123,7 +135,8 @@ public class PlayerController : MonoBehaviour
             armAnimator.SetTrigger("hasKnifed");
             RaycastHit hit;
 
-            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 2.5f))
+            //Knife
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 3.5f))
             {
                 if (hit.collider.gameObject.tag == "Zombie")
                 {
@@ -138,12 +151,10 @@ public class PlayerController : MonoBehaviour
                     
                     if (zController.GetHealth() - 100 > 0) 
                     {
-                        Debug.Log("A");
                         GameManager.instance.IncreaseScore(10);
                     }
                     else 
                     {
-                        Debug.Log("B");
                         GameManager.instance.IncreaseScore(100);
                     }
 

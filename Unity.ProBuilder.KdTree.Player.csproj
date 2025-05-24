@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{63DAC685-32FA-98F3-5C41-F2FB09D406DF}</ProjectGuid>
+    <ProjectGuid>{0945F6A2-82AF-E6EF-260F-E35421C9927F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ProBuilder.KdTree</AssemblyName>
@@ -844,7 +844,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{8BD7C680-6440-AB0D-FB8A-87E945A7AA84}</Project>
+      <Project>{E2A06B8D-B450-5D30-5FB0-0525C9B11023}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9F513EB8-FF1B-F70B-A648-C2832E3CEFFA}</ProjectGuid>
+    <ProjectGuid>{CC8B89D9-D9A1-37EE-DB9E-83CD1E815E34}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Analytics</AssemblyName>
@@ -986,15 +986,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{CB1FBABE-F437-1A5E-1F35-192F6C71CAE5}</Project>
+      <Project>{25936DE6-8C69-C615-8EAB-CBFEDC5F8C4F}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{294A7554-5C5F-7DD9-515F-353BB4D791F7}</Project>
+      <Project>{EE9CF2FE-1850-8964-EFD3-B0A4DFBF50E3}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{E9CB6659-4177-2979-F6AC-88BFBD4C233C}</Project>
+      <Project>{EBB4D32E-849F-4DE2-439C-6E5CAA40F21B}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

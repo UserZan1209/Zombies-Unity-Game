@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E0ADFFF5-84EF-30B0-4738-BC6B4F9C6B1A}</ProjectGuid>
+    <ProjectGuid>{2EC328A0-2D83-AAF2-A963-0784B69B8BC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ProBuilder.Stl</AssemblyName>
@@ -836,7 +836,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{8BD7C680-6440-AB0D-FB8A-87E945A7AA84}</Project>
+      <Project>{E2A06B8D-B450-5D30-5FB0-0525C9B11023}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

@@ -5,23 +5,16 @@ using UnityEngine;
 
 public class Wallbuy : Interactables
 {
-    [SerializeField] private GameObject weaponPrefab;
+    [SerializeField] private weapon wData;
 
     public void BuyWeapon(PlayerController pC)
     {
-        GameObject g = Instantiate(weaponPrefab, pC.inv.transform);
+        GameObject g = Instantiate(wData.prefab, pC.invObject.transform.position, Quaternion.identity);
 
-        g.transform.parent = pC.inv.transform;
+        g.transform.parent = pC.invObject.transform;
         g.gameObject.SetActive(true);
+        pC.inventory.AddWeapon(wData, g);
 
-        WeaponBehaviour wB = weaponPrefab.GetComponent<WeaponBehaviour>();
-
-
-        Destroy(pC.inv.weapons[pC.inv.equippedIndex].gameObject);
-        pC.inv.weapons[pC.inv.equippedIndex] = wB;
-        pC.inv.equipped = wB;
-
-        Debug.Log(pC.chr.equippedWeapon);
     }
 
     private void OnTriggerEnter(Collider other)

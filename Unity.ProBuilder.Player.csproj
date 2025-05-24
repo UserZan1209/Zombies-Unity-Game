@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{98BCB414-4005-F45C-9D73-569F0EE536A0}</ProjectGuid>
+    <ProjectGuid>{D7374F4E-69C9-0520-C2AF-326D37F3CC40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ProBuilder</AssemblyName>
@@ -944,15 +944,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.ProBuilder.Poly2Tri.Player.csproj">
-      <Project>{6E2F695E-7176-7ED4-505D-E13868D99C7D}</Project>
+      <Project>{7DF0297C-5D2C-6B02-68A0-017C26EE592D}</Project>
       <Name>Unity.ProBuilder.Poly2Tri.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.KdTree.Player.csproj">
-      <Project>{63DAC685-32FA-98F3-5C41-F2FB09D406DF}</Project>
+      <Project>{0945F6A2-82AF-E6EF-260F-E35421C9927F}</Project>
       <Name>Unity.ProBuilder.KdTree.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{8BD7C680-6440-AB0D-FB8A-87E945A7AA84}</Project>
+      <Project>{E2A06B8D-B450-5D30-5FB0-0525C9B11023}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

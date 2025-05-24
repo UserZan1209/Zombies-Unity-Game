@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{077708D9-F34E-ADC0-7D25-50597ADCF6D6}</ProjectGuid>
+    <ProjectGuid>{1AA5F1CB-4793-8F97-63C3-BA0991F097D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,145 +60,89 @@
     <Analyzer Include="E:\UnityEngine\2022.3.40f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\CanvasSpawner.cs" />
-    <Compile Include="Assets\Tensori\SkinlessZombie\Demo Scripts\CameraController.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ProjectileScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextMouseLock.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\ServiceLocator.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameService.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\GameModeService.cs" />
+    <Compile Include="Assets\VFX\PSXShaderKit\Demo\PSXExample_CameraMovement.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Perk.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\AnimationReceiver.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Magazine.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\PlaySoundCharacterBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Weapon.cs" />
-    <Compile Include="Assets\Tensori\SkinlessZombie\Demo Scripts\AnimationController.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Demo\DisplayMaterialName.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\MovementBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Movement.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IAudioManagerService.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTutorial.cs" />
     <Compile Include="Assets\Scripts\MapObjects\BarracadeController.cs" />
-    <Compile Include="Assets\Tensori\SkinlessZombie\Demo Scripts\AnimationItemData.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\GasTankScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\CharacterAnimationEventHandler.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Element.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Scope.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Box.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\WeaponAnimationEventHandler.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\PSXShaderKit\Scripts\PSXPostProcessEffect.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Inventory.cs" />
-    <Compile Include="Assets\PSXShaderKit\Scripts\PSXShaderManager.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextAmmunitionCurrent.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManagerBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Utilities\TimeHandler.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\ScopeBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Camera\CameraLook.cs" />
+    <Compile Include="Assets\VFX\PSXShaderKit\Scripts\PSXPostProcessEffect.cs" />
+    <Compile Include="Assets\VFX\PSXShaderKit\Demo\SpookyOrbFloat.cs" />
     <Compile Include="Assets\Scripts\Spawners\ZombieSpawner.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\InventoryBehaviour.cs" />
     <Compile Include="Assets\Scripts\Spawners\Zones\Zone.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Interactables.cs" />
-    <Compile Include="Assets\Tensori\SkinlessZombie\Demo Scripts\UIElementController.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Character.cs" />
-    <Compile Include="Assets\PSXShaderKit\Demo\SpookyOrbFloat.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameModeService.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Wallbuy.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\RLoops.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\PlaySoundBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\ElementText.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Barricade.cs" />
+    <Compile Include="Assets\VFX\PSXShaderKit\Scripts\PSXShaderManager.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\Loops.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Muzzle.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Power.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTimescale.cs" />
     <Compile Include="Assets\Scripts\Enemies\EController.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\LoopUtilities.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\Projectile.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\MagazineBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ExplosionScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\DebrisScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioManagerService.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\TargetScript.cs" />
+    <Compile Include="Assets\Scripts\Character\Weapons\weapon.cs" />
     <Compile Include="Assets\Infima Games\Tools\Log.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Utilities\UtilitiesArrays.cs" />
-    <Compile Include="Assets\PSXShaderKit\Demo\PSXExample_CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\EMovement.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\UtilitiesWeapons.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterKinematics.cs" />
+    <Compile Include="Assets\Scripts\Character\InventoryController.cs" />
     <Compile Include="Assets\Scripts\Managers\LightManager.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManager.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Debris.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Door.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\PlayParticles.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Crosshair.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextAmmunitionTotal.cs" />
     <Compile Include="Assets\Scripts\Managers\PerkManager.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\MuzzleBehaviour.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ExplosiveBarrelScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\CasingScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\ImageWeapon.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ImpactScript.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\Bootstraper.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioSettings.cs" />
+    <Compile Include="Assets\Scripts\Character\Weapons\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\WorldMaterialsFree\Shaders\WorldMatHDRPFree.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\WorldMaterialsFree\Shaders\WorldMatLiteFree.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
-    <None Include="Assets\WorldMaterialsFree\Shaders\WorldMatFree.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-UnlitTransparentCutout.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparentCutout.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\ImageEffects\PSX-Pixelation.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\ImageEffects\PSX-Interlacing.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-ShaderSrc-Lite.cginc" />
-    <None Include="Assets\LiteFireEffect\Shader\ParticlePremultiplyBlend.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Utils.cginc" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-VertexLit.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\ImageEffects\PSX-Dithering.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess.shader" />
-    <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparentCutout.shader" />
-    <None Include="Assets\LiteFireEffect\Shader\ParticleBlendEffect.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparent.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-VertexLitTransparent.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-ShaderSrc.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\FX_Kandol_Pack\FX_lightning_II\Shaders\built-in\Flipbook_Effects_built-in.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Unlit Transparent.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Unlit.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\WorldMaterialsFree\Shaders\WorldMatURPFree.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-UnlitTransparent.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-VertexLit.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-Unlit.shader" />
-    <None Include="Assets\LiteFireEffect\Shader\ParticleAddEffect.shader" />
-    <None Include="Assets\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparent.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Materials\WorldMaterialsFree\Shaders\WorldMatHDRPFree.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Materials\WorldMaterialsFree\Shaders\WorldMatLiteFree.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
+    <None Include="Assets\Materials\WorldMaterialsFree\Shaders\WorldMatFree.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-UnlitTransparentCutout.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparentCutout.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\ImageEffects\PSX-Pixelation.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\ImageEffects\PSX-Interlacing.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-ShaderSrc-Lite.cginc" />
+    <None Include="Assets\VFX\LiteFireEffect\Shader\ParticlePremultiplyBlend.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Utils.cginc" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-VertexLit.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\ImageEffects\PSX-Dithering.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparentCutout.shader" />
+    <None Include="Assets\VFX\LiteFireEffect\Shader\ParticleBlendEffect.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparent.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-VertexLitTransparent.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-ShaderSrc.cginc" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\VFX\FX_Kandol_Pack\FX_lightning_II\Shaders\built-in\Flipbook_Effects_built-in.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Materials\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Unlit Transparent.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Unlit.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Materials\WorldMaterialsFree\Shaders\WorldMatURPFree.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-UnlitTransparent.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-VertexLit.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-Unlit.shader" />
+    <None Include="Assets\VFX\LiteFireEffect\Shader\ParticleAddEffect.shader" />
+    <None Include="Assets\VFX\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparent.shader" />
+    <None Include="Assets\Materials\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -968,103 +912,103 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.Player.csproj">
-      <Project>{53852F52-AD57-BBFF-18E5-E73A0EF4FE46}</Project>
+      <Project>{9CFA1EFD-9F9B-7E8E-C649-DDF72C33551B}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
-      <Project>{47CA7FD2-5C0A-11C4-501A-2B42E4276CDF}</Project>
+      <Project>{845D6869-46AE-1AE7-F274-B8342C272378}</Project>
       <Name>Unity.Postprocessing.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
-      <Project>{157D6590-3794-0600-671B-23F376850E8D}</Project>
+      <Project>{FDD53103-6CD7-1834-3E3D-A759F04F0293}</Project>
       <Name>Unity.AI.Navigation.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Analytics.DataPrivacy.Player.csproj">
-      <Project>{C0A05B8B-966E-E055-5200-88CC44CC9E76}</Project>
+      <Project>{5CA1159D-54CD-066B-C111-FA124AD0E3DA}</Project>
       <Name>Unity.Analytics.DataPrivacy.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{2A407E77-A6E6-E055-47B9-2FB5F8C6CF9D}</Project>
+      <Project>{CEA2F5CC-7691-ED2B-7814-A94C12F107FF}</Project>
       <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Config.Runtime.Player.csproj">
-      <Project>{311378EF-E2CF-9759-2B20-B4F04602CA49}</Project>
+      <Project>{380E8F5C-76D8-1BE5-78AE-7DB8FF1FD0B7}</Project>
       <Name>Unity.RenderPipelines.Universal.Config.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Player.csproj">
-      <Project>{160CF129-4AAA-86B7-6EE0-EEDCEE1039D0}</Project>
+      <Project>{3D4E4D7F-9C2B-8386-52A6-5D3C406F859D}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
-      <Project>{28BA1862-9231-9403-0B5F-5A58164FD22B}</Project>
+      <Project>{8FE259B1-A6B0-2770-9C68-24C568D04B74}</Project>
       <Name>Unity.Services.Core.Environments.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.Player.csproj">
-      <Project>{6326B9BF-0929-BB8E-E28C-32C7E21D7900}</Project>
+      <Project>{A53C70DE-266D-6867-BC39-3C354043D621}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{E8753783-5006-29B6-9B15-0E86C783E98C}</Project>
+      <Project>{541B55A8-E80B-BE14-6691-CC1D824EDD6C}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
-      <Project>{86E1EA6A-E14B-F1B1-1443-8B8E4226A5F0}</Project>
+      <Project>{6E1399C1-F86C-BED8-ADB8-70297546E206}</Project>
       <Name>Unity.Services.Core.Analytics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.Player.csproj">
-      <Project>{79F96A5D-EF4C-206D-9A8F-A738370E1B12}</Project>
+      <Project>{F0FECFDC-BA98-A7AA-318C-B928C32AC7F2}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.Player.csproj">
-      <Project>{3C1E4529-39C3-BDAF-CA3B-13C7501ED870}</Project>
+      <Project>{A1628E4A-FE55-4DCD-A1F0-DB1001DF772E}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
-      <Project>{97484BDD-2A43-E748-59BA-62A366743EAB}</Project>
+      <Project>{8DB587D7-5F59-348C-932A-63A9BDA084FF}</Project>
       <Name>Unity.Burst.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.Player.csproj">
-      <Project>{98BCB414-4005-F45C-9D73-569F0EE536A0}</Project>
+      <Project>{D7374F4E-69C9-0520-C2AF-326D37F3CC40}</Project>
       <Name>Unity.ProBuilder.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
-      <Project>{603B1BCB-F357-19F6-F651-73BAD08DE129}</Project>
+      <Project>{860EA6B1-59F2-3AA3-3767-ED15A1088BC0}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{8BD7C680-6440-AB0D-FB8A-87E945A7AA84}</Project>
+      <Project>{E2A06B8D-B450-5D30-5FB0-0525C9B11023}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.Player.csproj">
-      <Project>{A78F8200-BA8B-7D42-7157-7AF12E0D67F3}</Project>
+      <Project>{D7AC3A5D-E30F-0340-63B2-1D5D6A218B9A}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{AC721AD5-BCE6-C926-0017-1420C0042903}</Project>
+      <Project>{F82C3FEA-827A-BE1A-6E4B-68049E6FC374}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.Player.csproj">
-      <Project>{47D80CC9-D061-46FD-E08B-7362D2D17F7B}</Project>
+      <Project>{427264F6-DA41-40B6-ABDF-C75669544757}</Project>
       <Name>Unity.InputSystem.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.ForUI.Player.csproj">
-      <Project>{0EF3A84B-46EC-CEEC-21E6-8E6889F88C9F}</Project>
+      <Project>{D49D0325-102D-B86A-482C-A4D002A38CA7}</Project>
       <Name>Unity.InputSystem.ForUI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Analytics.Player.csproj">
-      <Project>{92BBB04C-BCAE-91F8-A99D-88760D6E0876}</Project>
+      <Project>{5043896F-97BE-FD7A-70E4-9E2012E9A6FB}</Project>
       <Name>Unity.Services.Analytics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{46B607B9-CA9D-9E82-764A-F040202B377A}</Project>
+      <Project>{D420D3F4-82FA-D0D7-11C1-6F45EA0548D9}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.Player.csproj">
-      <Project>{6DE47F61-1F62-F4BD-F689-4262A57F0B11}</Project>
+      <Project>{3C04CB45-B1BA-EFA9-921B-42ED5D9CD4B2}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
-      <Project>{4FD206CF-33B3-CF4A-240F-7FDC8FC2F352}</Project>
+      <Project>{63BD5290-F842-771C-CA69-99CA3971B6CC}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
     </ProjectReference>
   </ItemGroup>
