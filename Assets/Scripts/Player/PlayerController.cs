@@ -25,12 +25,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float playerHealthMAX;
     [SerializeField] private float speedRunning;
     [SerializeField] private float speedWalking;
+    [SerializeField] private float slideForce;
     [SerializeField] private int playerScore;
     [SerializeField] public bool isDowned;
     [Tooltip("Enables God-Mode")]
     [SerializeField] private bool GDM;
     [SerializeField] private bool grounded;
     [SerializeField] private bool isRunning;
+    [SerializeField] private bool isCrouched;
+    [SerializeField] private bool isProned;
+    [SerializeField] private Vector3 proneOffsetVector;
 
     [SerializeField] private float RegenerationRate;
     private float verticalRotation = 0f;
@@ -70,9 +74,12 @@ public class PlayerController : MonoBehaviour
 
         isDowned = false;
         grounded = true;
+        isRunning = false;
+        isCrouched = false;
+        isProned = false;
 
         speedWalking = 5.0f;
-        speedRunning = 9.0f;
+        speedRunning = 8.0f;
     }
 
     private void Awake()
@@ -100,8 +107,19 @@ public class PlayerController : MonoBehaviour
 
 
                     //needs changing to weapon damage
-                    zController.TakeDamage(35);
-                    GameManager.instance.IncreaseScore(50);
+
+
+                    if (hasDT)
+                    {
+                        zController.TakeDamage(20);
+                        GameManager.instance.IncreaseScore(20);
+                        return;
+                    }
+                    else
+                    {
+                        zController.TakeDamage(10);
+                        GameManager.instance.IncreaseScore(10);
+                    }
                 }
             }
         }
@@ -119,6 +137,58 @@ public class PlayerController : MonoBehaviour
                 return;
 
             inventory.SwitchWeapon();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (isRunning)
+                return;
+
+            isRunning = true;
+            armAnimator.SetBool("isRunning", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            if (!isRunning)
+                return;
+
+            isRunning = false;
+            armAnimator.SetBool("isRunning", false);
+        }
+
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            isCrouched = !isCrouched;
+
+            if(isCrouched)
+            {
+                capsuleCollider.height = 1.0f;
+                if (isRunning)
+                {
+                    rb.AddForce(cameraTransform.forward * slideForce, ForceMode.Impulse);
+                }
+            }
+            else
+            {
+                capsuleCollider.height = 2.0f;
+                isProned = false;
+            }
+                
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            isProned = !isProned;
+
+            if (isProned)
+                capsuleCollider.height = 0.4f;
+            else
+            {
+                capsuleCollider.height = 2.0f;
+                isCrouched = false;
+            }
+                
+
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -227,12 +297,34 @@ public class PlayerController : MonoBehaviour
                 s = speedWalking;
             }
 
+            if (isCrouched)
+            {
+                s = speedRunning / 2.0f;
+            }
+            else if (!isCrouched && !isRunning)
+            {
+                s = speedWalking;
+            }
+
+            if (isProned)
+            {
+                s = speedRunning / 4.0f;
+            }
+            else if (!isProned && !isRunning)
+            {
+                s = speedWalking;
+            }
+
             //transform.position += moveDir * s * Time.deltaTime;
 
             Vector3 moveVector = -transform.forward * moveInput.x + transform.right * moveInput.y;
             rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z) * s;
 
         }
+
+        //Fix for a velocity issue causing player to gain large speeds
+        if (rb.velocity.y > 30)
+            rb.velocity = Vector3.zero;
     }
 
     private void LoadMainMenu()
@@ -242,6 +334,9 @@ public class PlayerController : MonoBehaviour
 
     public void IncreaseScore(int points)
     {
+        if (GameManager.instance.isDoublePoints)
+            points = points * 2;
+
         playerScore += points;
         PlayerUI.instance.UpdateScoreText(playerScore);
     }
@@ -276,6 +371,8 @@ public class PlayerController : MonoBehaviour
 
         if(playerHealth <= 0 && !isDowned)
         {
+            armAnimator.SetTrigger("tDeath");
+            PlayerUI.instance.DisableAllDamageIndicators();
             //trigger Downed or GameOver
             if (!hasQR)
             {
@@ -285,6 +382,7 @@ public class PlayerController : MonoBehaviour
             Downed();
             hasDT = false;
             hasJG = false;
+            ChangeMaxHealth();
             hasSC = false;
             hasQR = false;
 
@@ -298,12 +396,14 @@ public class PlayerController : MonoBehaviour
     public void Downed()
     {
         capsuleCollider.height = 0.0f;
+ 
         playerHealth = 0;
     }
 
     public void Revive()
     {
         capsuleCollider.height = 1.5f;
+        armAnimator.SetTrigger("tRevive");
         playerHealth = playerHealthMAX;
 
         isDowned = false;
@@ -314,24 +414,45 @@ public class PlayerController : MonoBehaviour
         return playerScore;
     }
 
-    public void AddPerk(PerkType pT)
+    public void AddPerk(PerkData pT)
     {
-        switch (pT) 
+        inventory.AddPerkToList(pT);
+
+        PlayerUI.instance.AddPerk(inventory.activePerks);
+
+        switch (pT.perkType) 
         {
             case PerkType.QR:
-                Debug.Log("QR");
-                break;
-            case PerkType.JG:
-                Debug.Log("JG");
+                hasQR = true;
                 break;
             case PerkType.SC:
-                Debug.Log("SC");
+                hasSC = true;
                 break;
             case PerkType.DT:
-                Debug.Log("DT");
+                hasDT = true;
+                break;
+            case PerkType.JG:
+                hasJG = true;
+                ChangeMaxHealth();
+                break;
+            default:
+                Debug.Log("No valid perk type");
                 break;
         }
+    }
 
+    private void ChangeMaxHealth()
+    {
+        if (hasJG)
+        {
+            playerHealthMAX = 200.0f;
+        }
+        else
+        {
+            playerHealthMAX = 100.0f;
+            
+        }
+        playerHealth = playerHealthMAX;
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] public int roundNum;
     [SerializeField] private int targetFrameCap;
+    [SerializeField] public bool isInstaKill = false;
+    [SerializeField] public bool isDoublePoints = false;
+    [SerializeField] public float powerUpTimer = 0.0f;
 
     [Header("Map Settings")]
     [SerializeField] private Interactables[] powerDoors;
@@ -35,12 +38,40 @@ public class GameManager : MonoBehaviour
         playerUI = PlayerUI.instance;
 
         //Disabled during testing
-        targetFrameCap = 29;
+        targetFrameCap = 24;
         Application.targetFrameRate = targetFrameCap;
 
         roundNum = 1;
 
         FindPlayer();
+    }
+
+    private void Update()
+    {
+        PowerUpTimer();
+    }
+
+    public void Nuke()
+    {
+        playerRef.GetComponent<PlayerController>().IncreaseScore(800);
+        
+        //nuke UI vfx
+    }
+
+    private void PowerUpTimer()
+    {
+        if(powerUpTimer > 0.0f)
+            powerUpTimer -= Time.deltaTime;
+        else if(powerUpTimer <= 0.0f)
+        {
+            powerUpTimer = 0.0f;
+            if(isInstaKill)
+                isInstaKill = false;
+            if(isDoublePoints)
+                isDoublePoints = false;
+
+            PowerUpController.Instance.DisableIcon();
+        }
     }
 
     #region Reference-Functions

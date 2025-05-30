@@ -60,8 +60,9 @@
     <Analyzer Include="E:\UnityEngine\2022.3.40f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Character\Perks\PerkData.cs" />
     <Compile Include="Assets\VFX\PSXShaderKit\Demo\PSXExample_CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\MapObjects\Interactables\Perk.cs" />
+    <Compile Include="Assets\Scripts\Managers\PowerUpController.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Scripts\MapObjects\BarracadeController.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Box.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\PerkMachine.cs" />
     <Compile Include="Assets\VFX\PSXShaderKit\Scripts\PSXPostProcessEffect.cs" />
     <Compile Include="Assets\VFX\PSXShaderKit\Demo\SpookyOrbFloat.cs" />
     <Compile Include="Assets\Scripts\Spawners\ZombieSpawner.cs" />
@@ -82,6 +84,8 @@
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Power.cs" />
     <Compile Include="Assets\Scripts\Enemies\EController.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\LoopUtilities.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\PowerUps\PowerUpTypes.cs" />
     <Compile Include="Assets\Scripts\Character\Weapons\weapon.cs" />
     <Compile Include="Assets\Infima Games\Tools\Log.cs" />
     <Compile Include="Assets\Scripts\Enemies\EMovement.cs" />

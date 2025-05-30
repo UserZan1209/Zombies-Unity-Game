@@ -934,15 +934,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  canMove: 1
-  moveSpeed: 0
-  range: 0
   body: {fileID: 9060522365843256390}
+  animator: {fileID: 0}
   player: {fileID: 0}
   targetTransform: {fileID: 0}
   barricadeController: {fileID: 0}
   navMeshAgent: {fileID: 0}
-  animator: {fileID: 0}
+  canMove: 1
+  moveSpeed: 0
+  range: 0
 --- !u!114 &1955683032623407832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,12 +955,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d27b2574ed27264b85e524d00f852e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zmSpawner: {fileID: 0}
   movementComponent: {fileID: 0}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
+  dropList:
+  - {fileID: 3048779365953037308, guid: a892642aabfa7644392f5d33b77af34f, type: 3}
+  - {fileID: 3059052859456759253, guid: 08df0c6fd39810b4095030f978876fea, type: 3}
+  - {fileID: 5425879878769286877, guid: fcb4b7be2202bbe4cbc359d3433d5745, type: 3}
   healthVal: 0
   hasEnteredMap: 0
-  zmSpawner: {fileID: 0}
+  isActive: 0
   despawnCounter: 80
-  player: {fileID: 0}
+  attackCooldown: 0
+  spawnPoint: {fileID: 0}
 --- !u!195 &1272356846130810151
 NavMeshAgent:
   m_ObjectHideFlags: 0

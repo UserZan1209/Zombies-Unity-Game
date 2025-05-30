@@ -5,6 +5,8 @@ using UnityEngine;
 public class ZombieSpawner : MonoBehaviour
 {
     #region Variables-and-References
+    [SerializeField] public static ZombieSpawner Instance;
+
     [Header("Zombie Types")]
     [SerializeField] private GameObject basicZombiePrefab;
     [HideInInspector] private GameObject[] zPool;
@@ -28,6 +30,8 @@ public class ZombieSpawner : MonoBehaviour
 
     private void init()
     {
+        Instance = this;
+
         #region define-mapzones
         int length = mapZoneContainer.transform.childCount;
         mapZones = new Zone[length];
@@ -131,5 +135,18 @@ public class ZombieSpawner : MonoBehaviour
         return zombieCount;
     }
 
+    public void KillAll()
+    {
+        for(int i = 0; i < zPool.Length; i++)
+        {
+            if(zPool[i] != null)
+            {
+                Destroy(zPool[i]);
+            }
+        }
+
+        zombieCount = 0;
+        StartNextRound(roundNumber);
+    }
 
 }

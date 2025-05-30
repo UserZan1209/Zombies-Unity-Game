@@ -8,18 +8,20 @@ public class WeaponSlot
 {
     public WeaponSlot()
     {
+        isUsed = false;
         wData = null;
         wController = null;
         weaponRef = null;
     }
 
+    public bool isUsed;
     public weapon wData;
     public WeaponController wController;
     public GameObject weaponRef;
 
     public bool IsEmpty()
     {
-        if (wData == null)
+        if (isUsed == false)
         {
             return true;
         }
@@ -35,44 +37,53 @@ public class Inventory
 {
     public GameObject weaponContainer;
     [SerializeField] public WeaponSlot[] weaponSlots;
+    [SerializeField] public PerkData[] activePerks;
     [SerializeField] public int equipedIndex;
     public bool hasMultipleWeapons = false;
 
     public Inventory(int weaponSlotAmount)
     {
         weaponSlots = new WeaponSlot[weaponSlotAmount];
+        activePerks = new PerkData[4];
         equipedIndex = 0;
         Debug.Log(weaponSlots.Length);
     }
 
     public void AddWeapon(weapon w, GameObject obj)
     {
+        /*        if (weaponSlots[0] == null)
+                    return;*/
+
+        Debug.Log(weaponSlots[0].IsEmpty());
 
         if (weaponSlots[0].IsEmpty() == true)
         {
             weaponSlots[0].wData = w;
             weaponSlots[0].weaponRef = obj;
             equipedIndex = 0;
-            Debug.Log("b " + weaponSlots.Length);
+
+            weaponSlots[0].isUsed = true;
             return;
 
         }
-        else if(weaponSlots[0].IsEmpty() == false)
+        if(weaponSlots[0].IsEmpty() == false && weaponSlots[1].IsEmpty() == true)
         {
             weaponSlots[0].weaponRef.SetActive(false);
             
             weaponSlots[1].wData = w;
             weaponSlots[1].weaponRef = obj;
             equipedIndex = 1;
+            weaponSlots[1].isUsed = true;
             hasMultipleWeapons = true;
             Debug.Log("c " + weaponSlots.Length);
             return;
         }
-        else if(weaponSlots[0].IsEmpty() == false && weaponSlots[1].IsEmpty() == false) 
+        if(weaponSlots[0].IsEmpty() == false && weaponSlots[1].IsEmpty() == false) 
         {
+            GameObject.Destroy(weaponSlots[equipedIndex].weaponRef.gameObject);
+
             weaponSlots[equipedIndex].wData = w;
             weaponSlots[equipedIndex].weaponRef = obj;
-            Debug.Log("a " + weaponSlots.Length);
             return;
         }
 
@@ -110,6 +121,9 @@ public class Inventory
         {
             for (int i = 0; i < weaponContainer.transform.childCount; i++)
             {
+                if (weaponSlots[i].weaponRef == null)
+                    return;
+
                 if(i == equipedIndex)
                 {
                     weaponSlots[i].weaponRef.SetActive(true);
@@ -142,6 +156,22 @@ public class Inventory
                 weaponSlots[i].weaponRef.SetActive(true);
             }
         }    
+    }
+
+    public void AddPerkToList(PerkData pD)
+    {
+        for (int i = 0; i < activePerks.Length; i++)
+        {
+            if (activePerks[i] == null)
+            {
+                activePerks[i] = pD;
+                return;
+            }
+            else
+            {
+                Debug.Log("No room");
+            }
+        }
     }
 }
 

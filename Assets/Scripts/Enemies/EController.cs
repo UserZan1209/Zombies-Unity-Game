@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
 using UnityEngine;
 
 public class EController : MonoBehaviour
@@ -9,6 +10,7 @@ public class EController : MonoBehaviour
     [SerializeField] private EMovement movementComponent;
     [SerializeField] private GameObject player;
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject[] dropList;
 
     [Header("Variables")]
     [SerializeField] private int healthVal;
@@ -47,7 +49,7 @@ public class EController : MonoBehaviour
             // change targeting while down to prevent swarming while down
             if (playerController.isDowned)
             {
-                movementComponent.UpdateTarget(spawnPoint);
+                movementComponent.UpdateTarget(transform);
             }
             else if (!playerController.isDowned)
             {
@@ -86,6 +88,10 @@ public class EController : MonoBehaviour
 
         healthVal -= d;
 
+        if (GameManager.instance.isInstaKill)
+            healthVal = 0;
+
+
         if (healthVal <= 0)
         {
             isActive = false;
@@ -99,7 +105,18 @@ public class EController : MonoBehaviour
 
     private void Death()
     {
+        int r = Random.Range(0, 10);
+        int pChoice = Random.Range(0, dropList.Length);
+
+        Vector3 spawn = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);  
+
+        if(r == 0)
+        {
+            Instantiate(dropList[pChoice], spawn, Quaternion.identity);
+        }
+
         zmSpawner.DecreaseZCount();
+        movementComponent.UpdateTarget(transform);
         movementComponent.animator.SetTrigger("death");
         movementComponent.canMove = false;
     }

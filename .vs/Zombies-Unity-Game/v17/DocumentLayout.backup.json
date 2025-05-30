@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\character\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\mapobjects\\interactables\\interactables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapobjects\\interactables\\interactables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\mapobjects\\interactables\\wallbuy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapobjects\\interactables\\wallbuy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\assets\\scripts\\spawners\\zombiespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\spawners\\zombiespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawners\\zombiespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\assets\\scripts\\character\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\assets\\scripts\\player\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\assets\\scripts\\character\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|d:\\=projects=\\zombies\\zombiesprototype\\zombies-unity-game\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CFEB96B-0335-DA91-4C64-C83204AEA4B1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,45 +30,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\InventoryController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\InventoryController.cs",
-              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\InventoryController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\InventoryController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:27:27.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:32:34.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ZombieSpawner.cs",
               "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
               "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spawners\\ZombieSpawner.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwGgAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv2wAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T23:12:55.725Z"
+              "WhenOpened": "2025-05-29T17:21:56.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAHEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T16:28:28.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerUI.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerUI.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Player\\PlayerUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerUI.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T09:02:15.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\InventoryController.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\InventoryController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\InventoryController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAC4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:27:27.847Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -82,41 +92,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Interactables.cs",
-              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\MapObjects\\Interactables\\Interactables.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MapObjects\\Interactables\\Interactables.cs",
-              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\MapObjects\\Interactables\\Interactables.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MapObjects\\Interactables\\Interactables.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T19:46:28.856Z",
+              "WhenOpened": "2025-05-25T08:15:36.234Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Wallbuy.cs",
-              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\MapObjects\\Interactables\\Wallbuy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MapObjects\\Interactables\\Wallbuy.cs",
-              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\MapObjects\\Interactables\\Wallbuy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MapObjects\\Interactables\\Wallbuy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T22:53:53.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "weapon.cs",
-              "DocumentMoniker": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\Weapons\\weapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Weapons\\weapon.cs",
-              "ToolTip": "D:\\=Projects=\\Zombies\\ZombiesPrototype\\Zombies-Unity-Game\\Assets\\Scripts\\Character\\Weapons\\weapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Weapons\\weapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T13:20:44.928Z"
             }
           ]
         }

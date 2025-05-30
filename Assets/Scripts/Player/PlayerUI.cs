@@ -10,9 +10,14 @@ public class PlayerUI : MonoBehaviour
     public GameObject playerScoreText;
     public GameObject interactText;
     public GameObject roundText;
+    public GameObject iconPrefab;
+    public GameObject[] perkIcons;
+    public GameObject perkIconContainer;
+    public float perkIconOffset;
 
     [SerializeField] private Image attack1;
     [SerializeField] private Image attack2;
+    [SerializeField] private Image attack3;
     [SerializeField] private Image Flash;
 
     void Start()
@@ -22,6 +27,11 @@ public class PlayerUI : MonoBehaviour
         interactText.SetActive(false);
         attack1.enabled = false;
         attack2.enabled = false;
+        attack3.enabled = false;
+        perkIcons[0].GetComponent<Image>().enabled = false;
+        perkIcons[1].GetComponent<Image>().enabled = false;
+        perkIcons[2].GetComponent<Image>().enabled = false;
+        perkIcons[3].GetComponent<Image>().enabled = false;
         //Flash.enabled = false;  
     }
 
@@ -88,22 +98,51 @@ public class PlayerUI : MonoBehaviour
             attack2.enabled = false;
         }
 
-        if(playerHealth < 100)
+        if(playerHealth < 100) 
+        {
             attack1.enabled = true;
+        }
         else
         {
             attack1.enabled = false;
         }
 
+        if (playerHealth < 30)
+        {
+            attack3.enabled = true;
+        }
+        else
+        {
+            attack3.enabled = false;
+        }
+
         if (playerHealth <= 0)
         {
-            attack1.enabled = false;
-            attack2.enabled = false;
+            DisableAllDamageIndicators();
         }
     }
 
     public void EnableFlash()
     {
         Flash.enabled = true;
+    }
+
+    public void DisableAllDamageIndicators()
+    {
+        attack1.enabled = false;
+        attack2.enabled = false;
+        attack3.enabled = false;
+    }
+
+    public void AddPerk(PerkData[] pD)
+    {
+/*        for (int i = 0; i < pD.Length; i++) 
+        {
+            if (pD[i] == null)
+                return;
+
+            //perkIcons[i].GetComponent<Image>().enabled = true;
+            perkIcons[i].GetComponent<Image>().color = pD[i].perkColor;
+        }*/
     }
 }

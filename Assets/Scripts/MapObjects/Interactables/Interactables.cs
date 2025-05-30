@@ -58,7 +58,7 @@ public class Interactables : MonoBehaviour
             switch (interactableType)
             {
                 case InteractableTypes.Perk:
-                    gameObject.GetComponent<Perk>().UsePerk(pC);
+                    gameObject.GetComponent<PerkMachine>().UsePerk(pC);
                     break;
                 case InteractableTypes.Box:
                     gameObject.GetComponent<Box>().UseBox();

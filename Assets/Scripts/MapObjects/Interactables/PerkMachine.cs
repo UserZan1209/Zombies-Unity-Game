@@ -2,25 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PerkType
+public class PerkMachine : Interactables
 {
-    QR,
-    DT,
-    JG,
-    SC
-}
-
-public class Perk : Interactables
-{
-    public PerkType perkType;
-
+    public PerkData perkData;
     //Give perk() - check if already has it
     public void UsePerk(PlayerController pC)
     {
         if (hasBeenUsed || !GameManager.instance.isPowerOn)
             return;
 
-        pC.AddPerk(perkType);
+        pC.AddPerk(perkData);
     }
 
     private void OnTriggerEnter(Collider other)

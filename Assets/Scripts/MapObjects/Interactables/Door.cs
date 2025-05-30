@@ -10,10 +10,13 @@ public class Door : Interactables
         power
     }
 
+    [SerializeField] private Animator animator;
     [SerializeField] private DoorType type;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         switch (type) 
         {
             case DoorType.def:
@@ -29,16 +32,42 @@ public class Door : Interactables
 
     }
 
-    public void UseDoor()
+    private void Update()
     {
-        Destroy(gameObject);
+        if (hasBeenUsed)
+            return;
+
+        if (requiresPower && !hasBeenUsed)
+            CheckForPower();
     }
 
+    public void UseDoor()
+    {
+        animator.SetTrigger("openDoor");
+    }
+
+    private void CheckForPower() 
+    {
+        if (GameManager.instance != null)
+        {
+            if (GameManager.instance.isPowerOn)
+            {
+                UseDoor();
+                hasBeenUsed = true;
+            }
+
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && requiresPower)
+        if (hasBeenUsed)
+            return;
+
+        //interaction text
+        if (other.gameObject.tag == "Player")
         {
+
             if (requiresPower)
             {
                 PlayerUI.instance.NeedPowerText();
@@ -53,6 +82,10 @@ public class Door : Interactables
 
     private void OnTriggerExit(Collider other)
     {
+        if (hasBeenUsed)
+            return;
+
+        //interaction text
         if (other.gameObject.tag == "Player")
         {
             PlayerUI.instance.DisbaleInteractText();
