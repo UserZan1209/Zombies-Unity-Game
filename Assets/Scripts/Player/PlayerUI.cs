@@ -11,9 +11,19 @@ public class PlayerUI : MonoBehaviour
     public GameObject interactText;
     public GameObject roundText;
     public GameObject iconPrefab;
-    public GameObject[] perkIcons;
+    public Image[] perkIcons;
     public GameObject perkIconContainer;
+    public float perkOffsetX;
+    public float perkOffsetY;
     public float perkIconOffset;
+
+    [SerializeField] private GameObject gameOverContainer;
+    [SerializeField] private TextMeshProUGUI killText;
+    [SerializeField] private TextMeshProUGUI headshotText;
+    [SerializeField] private TextMeshProUGUI downText;
+    [SerializeField] private TextMeshProUGUI endRoundText;
+    [SerializeField] private TextMeshProUGUI magazineText;
+    [SerializeField] private TextMeshProUGUI stockText;
 
     [SerializeField] private Image attack1;
     [SerializeField] private Image attack2;
@@ -28,11 +38,10 @@ public class PlayerUI : MonoBehaviour
         attack1.enabled = false;
         attack2.enabled = false;
         attack3.enabled = false;
-        perkIcons[0].GetComponent<Image>().enabled = false;
-        perkIcons[1].GetComponent<Image>().enabled = false;
-        perkIcons[2].GetComponent<Image>().enabled = false;
-        perkIcons[3].GetComponent<Image>().enabled = false;
+        gameOverContainer.SetActive(false);
         //Flash.enabled = false;  
+        perkOffsetX = 60.0f;
+        perkOffsetY = 50.0f;
     }
 
     public void Update()
@@ -69,6 +78,13 @@ public class PlayerUI : MonoBehaviour
     {
         interactText.SetActive(true);
         string text = "Press F to use " + interactableName;
+        interactText.GetComponent<TextMeshProUGUI>().text = text;
+    }
+
+    public void EnableTakeText(string interactableName)
+    {
+        interactText.SetActive(true);
+        string text = "Press F to take " + interactableName;
         interactText.GetComponent<TextMeshProUGUI>().text = text;
     }
 
@@ -134,15 +150,47 @@ public class PlayerUI : MonoBehaviour
         attack3.enabled = false;
     }
 
+    public void OpenStatMenu(int k, int h, int d)
+    {
+        gameOverContainer.SetActive(true);
+
+        killText.text = k.ToString();
+        downText.text = d.ToString();
+        headshotText.text = h.ToString();
+    }
+
+    public void UpdateAmmoUI(int mag, int stock)
+    {
+        magazineText.text = mag.ToString();
+        stockText.text = stock.ToString();
+    }
+
+    public void OpenGameOver(int r)
+    {
+        endRoundText.text = r.ToString();
+    }
+
     public void AddPerk(PerkData[] pD)
     {
-/*        for (int i = 0; i < pD.Length; i++) 
+        int f = 0;
+        for (int i = 0; i < pD.Length; i++) 
         {
-            if (pD[i] == null)
-                return;
+            if (pD[i] != null)
+                f++;
+        }
 
-            //perkIcons[i].GetComponent<Image>().enabled = true;
-            perkIcons[i].GetComponent<Image>().color = pD[i].perkColor;
-        }*/
+        perkIcons = new Image[f];
+
+        for(int i = 0; i < perkIcons.Length; i++)
+        {
+            GameObject img = Instantiate(iconPrefab);
+            img.transform.parent = perkIconContainer.transform;
+
+            Vector3 pos = new Vector3(perkIconContainer.transform.position.x + (perkOffsetX * i), perkIconContainer.transform.position.y + perkOffsetY, 0);
+            img.transform.position = pos;
+
+            perkIcons[i] = img.GetComponent<Image>();
+            perkIcons[i].color = pD[i].perkColor;
+        }
     }
 }

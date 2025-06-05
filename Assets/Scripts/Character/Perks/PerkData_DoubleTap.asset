@@ -15,4 +15,4 @@ MonoBehaviour:
   perkName: Double Tap
   perkIcon: {fileID: 0}
   perkType: 1
-  perkColor: {r: 1, g: 0.5486495, b: 0, a: 0}
+  perkColor: {r: 1, g: 0.5486495, b: 0, a: 1}

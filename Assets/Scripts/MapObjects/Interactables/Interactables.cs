@@ -11,7 +11,8 @@ public enum InteractableTypes
     Door,
     PowerDoor,
     power,
-    wallbuy
+    wallbuy,
+    vent
 }
 
 /*
@@ -34,51 +35,55 @@ public class Interactables : MonoBehaviour
     #region functionallity
     public void ActivateInteractable(PlayerController pC)
     {
-        if (hasBeenUsed) 
-        {
-            return;
-        }
-
         if(requiresPower && !GameManager.instance.isPowerOn)
         {
             return;
         }
-
         //Remove points for use of interactable
         if (pC != null)
         {
-            if (pC.GetScore() < requiredPoints)
+            if (!hasBeenUsed && pC.GetScore() < requiredPoints)
             {
                 print("not enough");
                 return;
             }
 
-
-            #region interactable-actions
-            switch (interactableType)
-            {
-                case InteractableTypes.Perk:
-                    gameObject.GetComponent<PerkMachine>().UsePerk(pC);
-                    break;
-                case InteractableTypes.Box:
-                    gameObject.GetComponent<Box>().UseBox();
-                    break;
-                case InteractableTypes.Door:
-                    gameObject.GetComponent<Door>().UseDoor();
-                    break;
-                case InteractableTypes.Debris:
-                    gameObject.GetComponent<Debris>().RemoveDebris();
-                    break;
-                case InteractableTypes.power:
-                    gameObject.GetComponent<Power>().ActivatePower();
-                    break;
-                case InteractableTypes.wallbuy:
-                    gameObject.GetComponent<Wallbuy>().BuyWeapon(pC);
-                    break;
-                default:
-                    Debug.Log("INVALID-INTERACTABLE-TYPE");
-                    break;
-            }
+                #region interactable-actions
+                switch (interactableType)
+                {
+                    case InteractableTypes.Perk:
+                        if (hasBeenUsed) return;
+                        gameObject.GetComponent<PerkMachine>().UsePerk(pC);
+                        break;
+                    case InteractableTypes.Box:
+                        if (!hasBeenUsed)
+                            gameObject.GetComponent<Box>().UseBox(pC);
+                        else if (hasBeenUsed)
+                            gameObject.GetComponent<Box>().TakeWeapon(pC);
+                        break;
+                    case InteractableTypes.Door:
+                        if (hasBeenUsed) return;
+                        gameObject.GetComponent<Door>().UseDoor();
+                        break;
+                    case InteractableTypes.Debris:
+                        if (hasBeenUsed) return;
+                        gameObject.GetComponent<Debris>().RemoveDebris();
+                        break;
+                    case InteractableTypes.power:
+                        if (hasBeenUsed) return;
+                        gameObject.GetComponent<Power>().ActivatePower();
+                        break;
+                    case InteractableTypes.wallbuy:
+                        gameObject.GetComponent<Wallbuy>().BuyWeapon(pC);
+                        break;
+                    case InteractableTypes.vent:
+                        if (hasBeenUsed) return;
+                        gameObject.GetComponent<Vent>().OpenVent();
+                        break;
+                    default:
+                        Debug.Log("INVALID-INTERACTABLE-TYPE");
+                        break;
+                }
 
 
 

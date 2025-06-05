@@ -15,4 +15,4 @@ MonoBehaviour:
   perkName: Juggernog
   perkIcon: {fileID: 0}
   perkType: 2
-  perkColor: {r: 1, g: 0, b: 0, a: 0}
+  perkColor: {r: 1, g: 0, b: 0, a: 1}

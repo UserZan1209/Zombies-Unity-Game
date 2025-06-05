@@ -27,16 +27,4 @@ public class weapon : ScriptableObject
     public int maxStockSize;
     public int currantClipSize;
     public int currantStockSize;
-
-    public void Fire()
-    {
-
-    }
-
-    public void Reload()
-    {
-
-    }
-
-
 }

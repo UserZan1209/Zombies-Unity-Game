@@ -15,4 +15,4 @@ MonoBehaviour:
   perkName: Quick Revive
   perkIcon: {fileID: 0}
   perkType: 0
-  perkColor: {r: 0, g: 0.90637374, b: 1, a: 0}
+  perkColor: {r: 0, g: 0.90637374, b: 1, a: 1}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,14 +18,25 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] public int roundNum;
     [SerializeField] private int targetFrameCap;
+    [SerializeField] private int nukePointAmount;
     [SerializeField] public bool isInstaKill = false;
     [SerializeField] public bool isDoublePoints = false;
     [SerializeField] public float powerUpTimer = 0.0f;
+
+    [Header("Sound Settings")]
+    [SerializeField] private AudioSource BGM;
 
     [Header("Map Settings")]
     [SerializeField] private Interactables[] powerDoors;
     [SerializeField] public Zone playerActiveZone;
     [SerializeField] public bool isPowerOn = false;
+    [SerializeField] public bool gameEnded = false;
+
+    [Header("Score Data")]
+    [SerializeField] private int killCount;
+    [SerializeField] private int headshotCount;
+    [SerializeField] private int downCount;
+
     #endregion
 
     private void Start()
@@ -35,10 +47,12 @@ public class GameManager : MonoBehaviour
     private void InitGameManager()
     {
         instance = this;
+        BGM = GetComponent<AudioSource>();
+
         playerUI = PlayerUI.instance;
 
         //Disabled during testing
-        targetFrameCap = 24;
+        targetFrameCap = 28;
         Application.targetFrameRate = targetFrameCap;
 
         roundNum = 1;
@@ -49,11 +63,22 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         PowerUpTimer();
+
+        if(gameEnded && Input.anyKey)
+        {
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene(0);
+        }
+            
     }
 
     public void Nuke()
     {
-        playerRef.GetComponent<PlayerController>().IncreaseScore(800);
+        int points = nukePointAmount;
+        if (isDoublePoints)
+            points = points * 2;
+
+        playerRef.GetComponent<PlayerController>().IncreaseScore(points);
         
         //nuke UI vfx
     }
@@ -97,6 +122,21 @@ public class GameManager : MonoBehaviour
         playerRef.GetComponent<PlayerController>().IncreaseScore(s);
     }
 
+    public void IncreaseKillCount()
+    {
+        killCount++;
+    }
+
+    public void IncreaseHeadshotCount()
+    {
+        headshotCount++;
+    }
+
+    public void IncreaseDownCount()
+    {
+        downCount++;
+    }
+
     public void updateRound(int r)
     {
         roundNum = r;
@@ -108,14 +148,6 @@ public class GameManager : MonoBehaviour
 
         LightManager lm = lightManager.GetComponent<LightManager>();
         lm.Activate();
-
-        if (powerDoors[0] == null)
-        {
-            return;
-        }
-        powerDoors[0].GetComponent<Door>().UseDoor();
-
-
     }
     #endregion
 
@@ -124,6 +156,15 @@ public class GameManager : MonoBehaviour
         //save progress
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        SceneManager.LoadScene(0);
+        Time.timeScale = 0.4f;
+        //Game over on UI - keep track of kills, downs, headshots
+        PlayerUI.instance.OpenStatMenu(killCount, headshotCount, downCount);
+        PlayerUI.instance.OpenGameOver(roundNum);
+        gameEnded = true;
+    }
+
+    public void OpenStatMenu()
+    {
+        playerUI.OpenStatMenu(killCount, headshotCount, downCount);
     }
 }

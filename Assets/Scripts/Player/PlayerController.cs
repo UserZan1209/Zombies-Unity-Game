@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CapsuleCollider capsuleCollider;
     [SerializeField] private InputActionReference moveIA;
     [SerializeField] private InputActionReference cameraMoeIA;
+    [SerializeField] private AudioSource stepSound;
+    [SerializeField] private AudioSource damageSound;
+    [SerializeField] private AudioSource shotSound;
+    [SerializeField] private float stepTimer;
  
     [Header("Variables")]
     [SerializeField] private float playerHealth;
@@ -52,10 +56,12 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>(); 
         capsuleCollider = GetComponent<CapsuleCollider>();
         invController = gameObject.AddComponent<InventoryController>();
-        invController.inventoryObject = invObject;
-        invController.inventory = new Inventory(WEAPON_SLOT_COUNT);
 
-        inventory = invController.inventory;    
+        inventory = new Inventory(WEAPON_SLOT_COUNT);
+
+        invController.inventoryObject = invObject;
+        invController.InitInventory(inventory);
+
 
         cameraTransform = Camera.main.transform;
 
@@ -92,7 +98,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             RaycastHit hit;
-
+            shotSound.Play();
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity))
             {
                 if (hit.collider.gameObject.tag == "Zombie")
@@ -122,21 +128,6 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-        }
-
-        if (Input.GetKeyUp(KeyCode.Alpha1)) 
-        {
-            if (inventory.weaponSlots[0].wData == null)
-                return;
-
-            inventory.SwitchWeapon();
-        }
-        if (Input.GetKeyUp(KeyCode.Alpha2))
-        {
-            if (inventory.weaponSlots[1].wData == null)
-                return;
-
-            inventory.SwitchWeapon();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -287,6 +278,7 @@ public class PlayerController : MonoBehaviour
        
         if (moveDir != Vector3.zero && grounded) 
         {
+            stepSound.Play();
             float s = 0;
             if (isRunning)
             {
@@ -320,6 +312,10 @@ public class PlayerController : MonoBehaviour
             Vector3 moveVector = -transform.forward * moveInput.x + transform.right * moveInput.y;
             rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z) * s;
 
+        }
+        else
+        {
+            stepSound.Stop();
         }
 
         //Fix for a velocity issue causing player to gain large speeds
@@ -368,9 +364,11 @@ public class PlayerController : MonoBehaviour
 
         playerHealth -= damage;
         PlayerUI.instance.DamageIndicator(playerHealth);
+        damageSound.Play();
 
         if(playerHealth <= 0 && !isDowned)
         {
+            GameManager.instance.IncreaseDownCount();
             armAnimator.SetTrigger("tDeath");
             PlayerUI.instance.DisableAllDamageIndicators();
             //trigger Downed or GameOver
@@ -391,6 +389,8 @@ public class PlayerController : MonoBehaviour
             //update UI
 
         }
+
+        
     }
 
     public void Downed()
@@ -467,13 +467,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "interactable")
         {
             Interactables iData = other.gameObject.GetComponent<Interactables>();
-            if (iData.hasBeenUsed)
-                return;
-
 
             //wait for input to use interactable
             if (Input.GetKeyUp(KeyCode.F))
             {
+                if(iData.name != "Box")
+                {
+                    if (iData.hasBeenUsed)
+                        return;
+                }
+
                 iData.ActivateInteractable(this);
                 PlayerUI.instance.DisbaleInteractText();
             }

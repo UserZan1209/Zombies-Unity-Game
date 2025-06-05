@@ -9,11 +9,17 @@ public class Wallbuy : Interactables
 
     public void BuyWeapon(PlayerController pC)
     {
-        GameObject g = Instantiate(wData.prefab, pC.invObject.transform.position, Quaternion.identity);
-
-        g.transform.parent = pC.invObject.transform;
-        g.gameObject.SetActive(true);
-        pC.inventory.AddWeapon(wData, g);
+        if (!hasBeenUsed)
+        {
+            pC.invController.AddWeapon(wData);
+            //pC.invController.ResetWeaponRendered();
+            hasBeenUsed = true;
+            return;
+        }
+        else
+        {
+            //BuyAmmo
+        }
 
     }
 
@@ -22,6 +28,7 @@ public class Wallbuy : Interactables
         if (other.gameObject.tag == "Player")
         {
             PlayerUI.instance.EnableInteractText(this);
+            //check if inventory has this weapondata
         }
     }
 

@@ -95,6 +95,9 @@ public class EController : MonoBehaviour
         if (healthVal <= 0)
         {
             isActive = false;
+
+            //Add parameter to determine what body part was hit
+            GameManager.instance.IncreaseKillCount();
             Death();
         }
         else

@@ -1,19 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : Interactables
+public class Vent : Interactables
 {
-    public void UseBox()
+    [SerializeField]private Animator anim;
+    private void Start()
     {
+        anim = GetComponent<Animator>();
+    }
 
+    public void OpenVent()
+    {
+        anim.SetTrigger("openVent");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            PlayerUI.instance.EnableInteractText(this);
+            if (hasBeenUsed)
+                return;
+
+            PlayerUI.instance.EnablePowerText(GetInteractableName());
         }
     }
 

@@ -67,8 +67,9 @@
     <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\Box\WeaponPool.cs" />
+    <Compile Include="Assets\Scripts\Character\WeaponSlot.cs" />
     <Compile Include="Assets\Scripts\MapObjects\BarracadeController.cs" />
-    <Compile Include="Assets\Scripts\MapObjects\Interactables\Box.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\PerkMachine.cs" />
     <Compile Include="Assets\VFX\PSXShaderKit\Scripts\PSXPostProcessEffect.cs" />
@@ -79,7 +80,9 @@
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Wallbuy.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\RLoops.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Barricade.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\Vent.cs" />
     <Compile Include="Assets\VFX\PSXShaderKit\Scripts\PSXShaderManager.cs" />
+    <Compile Include="Assets\Scripts\MapObjects\Interactables\Box\Box.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\Loops.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Power.cs" />
     <Compile Include="Assets\Scripts\Enemies\EController.cs" />
@@ -93,6 +96,7 @@
     <Compile Include="Assets\Scripts\Managers\LightManager.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Debris.cs" />
     <Compile Include="Assets\Scripts\MapObjects\Interactables\Door.cs" />
+    <Compile Include="Assets\Scripts\Character\Inventory.cs" />
     <Compile Include="Assets\Scripts\Managers\PerkManager.cs" />
     <Compile Include="Assets\Scripts\Character\Weapons\WeaponController.cs" />
   </ItemGroup>

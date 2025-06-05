@@ -15,4 +15,4 @@ MonoBehaviour:
   perkName: Speed Cola
   perkIcon: {fileID: 0}
   perkType: 3
-  perkColor: {r: 0.10436797, g: 1, b: 0, a: 0}
+  perkColor: {r: 0.10436797, g: 1, b: 0, a: 1}

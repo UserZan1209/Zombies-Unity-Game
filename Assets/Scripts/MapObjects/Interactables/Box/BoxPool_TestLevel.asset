@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d10d742a52c974c93e7adc1f217ed3, type: 3}
+  m_Name: BoxPool_TestLevel
+  m_EditorClassIdentifier: 
+  boxPool:
+  - {fileID: 11400000, guid: 81e58c8846a011b44834038f15bb5b05, type: 2}
+  - {fileID: 11400000, guid: c9079364bdcf94c438a007fdb6288b15, type: 2}
+  - {fileID: 11400000, guid: 7ef23548b968e2f47adb57500b11b55f, type: 2}

@@ -41,7 +41,7 @@ public class ZombieSpawner : MonoBehaviour
             mapZones[i] = mapZoneContainer.transform.GetChild(i).gameObject.GetComponent<Zone>();
         }
 
-        // Mapzone[0] refers to the spawn room
+        //Mapzone[0] refers to the spawn room
         spawnZone = mapZones[0];
         zPool = new GameObject[23];
         #endregion

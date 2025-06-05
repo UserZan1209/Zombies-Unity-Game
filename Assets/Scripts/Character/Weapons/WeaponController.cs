@@ -16,6 +16,16 @@ public class WeaponController : MonoBehaviour
         transform.forward = Camera.main.transform.forward;
     }
 
+    public void Fire()
+    {
+
+    }
+
+    public void Reload()
+    {
+
+    }
+
     public void ActivateWeapon()
     {
         gameObject.SetActive(true);
